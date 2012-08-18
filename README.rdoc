@@ -1,3 +1,42 @@
 = Marilyn
 
-This project rocks and uses MIT-LICENSE.
+{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/alaibe/marilyn]
+
+Marilyn is a Gem which allows you to use presenter patten easily into your rails project
+
+== Resources
+Bugs
+
+* http://github.com/alaibe/marilyn/issues
+
+Development
+
+* http://github.com/alaibe/marilyn
+
+Testing
+
+* http://travis-ci.org/alaibe/marilyn
+
+Source
+
+* git://github.com/alaibe/marilyn.git
+
+== Install
+
+Add this to your Gemfile
+
+  gem 'marilyn'
+
+== Usage
+
+You must generate your presente
+
+  rails g marilyn:presenter my_presenter
+  
+And in your view you can call
+
+  <%= presenter_for('template', object: @object)
+
+== Contributors
+
+*Anthony Laibe
