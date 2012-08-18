@@ -1,11 +1,12 @@
-= Marilyn
+# Marilyn [![Build Status](https://secure.travis-ci.org/alaibe/marilyn.png)][travis] [![Dependency Status](https://gemnasium.com/alaibe/marilyn.png)][gemnasium] [![Code Climate](https://codeclimate.com/badge.png)][codeclimate]
 
-{<img src="https://secure.travis-ci.org/alaibe/marilyn.png" />}[http://travis-ci.org/alaibe/marilyn]
-{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/alaibe/marilyn]
+[travis]: http://travis-ci.org/alaibe/marilyn
+[gemnasium]: https://gemnasium.com/alaibe/marilyn
+[codeclimate]: https://codeclimate.com/github/alaibe/marilyn
 
 Marilyn is a Gem which allows you to use presenter patten easily into your rails project
 
-== Resources
+## Resources
 Bugs
 
 * http://github.com/alaibe/marilyn/issues
@@ -22,13 +23,13 @@ Source
 
 * git://github.com/alaibe/marilyn.git
 
-== Install
+## Install
 
 Add this to your Gemfile
 
   gem 'marilyn'
-
-== Usage
+  
+## Usage
 
 You must generate your presenter
 
@@ -38,6 +39,6 @@ And in your view you can call
 
   <%= presenter_for('template', object: @object)
 
-== Contributors
+## Contributors
 
 *Anthony Laibe
