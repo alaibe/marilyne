@@ -26,18 +26,21 @@ Source
 ## Install
 
 Add this to your Gemfile
-
+``` ruby
   gem 'marilyn'
-  
+```
+
 ## Usage
 
 You must generate your presenter
-
+``` ruby
   rails g marilyn:presenter my_presenter
-  
-And in your view you can call
+```
 
+And in your view you can call
+``` ruby
   <%= presenter_for('template', object: @object)
+```
 
 ## Contributors
 
