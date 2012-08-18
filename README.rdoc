@@ -29,7 +29,7 @@ Add this to your Gemfile
 
 == Usage
 
-You must generate your presente
+You must generate your presenter
 
   rails g marilyn:presenter my_presenter
   
