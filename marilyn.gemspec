@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Marilyn::VERSION
   s.authors     = ["Anthony Laibe"]
   s.email       = ["anthony.laibe@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Marilyn."
-  s.description = "TODO: Description of Marilyn."
+  s.homepage    = "https://github.com/alaibe/marilyn"
+  s.summary     = "Use presenter pattern in rails easilyn."
+  s.description = "Use presenter pattern in rails easilyn."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

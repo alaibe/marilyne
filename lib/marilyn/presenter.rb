@@ -1,8 +1,15 @@
 module Marilyn
+  # == Base presenter
   class Presenter
-    def initialize(template, model)
+
+    attr_reader :template, :object, :objects
+
+    #  params:
+    # * <tt>:template</tt> - Template where you frome
+    # * <tt>:objects</tt> - All presented objects
+    def initialize(template, *objects)
       @template = template
-      @model    = model
+      objects.length == 1 ? @object = objects.first : @objects = objects 
     end
   end
 end

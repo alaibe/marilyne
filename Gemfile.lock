@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    marilyn (0.0.1)
+    marilyn (1.0.0)
       rails (~> 3.2.7)
 
 GEM
