@@ -1,5 +1,6 @@
 = Marilyn
 
+{<img src="https://secure.travis-ci.org/alaibe/marilyn.png" />}[http://travis-ci.org/alaibe/marilyn]
 {<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/alaibe/marilyn]
 
 Marilyn is a Gem which allows you to use presenter patten easily into your rails project
