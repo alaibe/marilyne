@@ -34,12 +34,43 @@ Add this to your Gemfile
 
 You must generate your presenter
 ``` ruby
-  rails g marilyne:presenter my_presenter
+  rails g marilyne:presenter base # => app/presenters/base_presenter.rb
 ```
 
 And in your view you can call
 ``` ruby
-  <%= presenter_for('template', object: @object) %>
+  <%= presenter_for('template', object: @base) %>
+```
+
+## Exemple
+
+Basic usage:
+``` ruby
+  presenter_for('base')
+    # => render partial: 'base', object: BasePresenter.new(template, Base.new)
+```
+
+It's possible to specify the object you want present:
+``` ruby
+  presenter_for('base', object: @object)
+    # => render partial: 'base', object: BasePresenter.new(template, @object)
+```
+
+or multiple object
+``` ruby
+  presenter_for('base', objects: [@object, @other_object])
+    # => render partial: 'base', object: BasePresenter.new(template, @object, @other_object)
+```
+
+A block can also be passed and the the render will be call only if block is true
+``` ruby
+  presenter_for('base', object: @object) { |object| object.ok? }
+```
+
+Finally, it's also possible to pass a presenter in options
+``` ruby
+  presenter_for('base', presenter: 'MySpecificPresenter', object: @object)
+    # => render partial: 'base', object: MySpecificPresenter.new(template, @object)
 ```
 
 ## Contributors

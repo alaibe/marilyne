@@ -29,7 +29,7 @@ module Marilyne
       presenter_string = options[:presenter] || "#{template.camelize}Presenter"
 
       object           = extract_objects template, options[:object], options[:objects]
-      presenter        = presenter_string.constantize.new self, *object
+      presenter        = presenter_string.to_s.constantize.new self, *object
 
       if block_given?
         return unless yield object
