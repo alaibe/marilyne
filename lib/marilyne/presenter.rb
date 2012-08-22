@@ -1,4 +1,4 @@
-module Marilyn
+module Marilyne
   # == Base presenter
   class Presenter
 
@@ -9,7 +9,7 @@ module Marilyn
     # * <tt>:objects</tt> - All presented objects
     def initialize(template, *objects)
       @template = template
-      objects.length == 1 ? @object = objects.first : @objects = objects 
+      objects.length == 1 ? @object = objects.first : @objects = objects
     end
   end
 end

@@ -1,2 +1,2 @@
-class <%= presenter_name.singularize.camelize %>Presenter < Marilyn::Presenter
+class <%= presenter_name.singularize.camelize %>Presenter < Marilyne::Presenter
 end

@@ -1,4 +1,4 @@
-class UserPresenter < Marilyn::Presenter
+class UserPresenter < Marilyne::Presenter
 
   def first_name
     @object.first_name

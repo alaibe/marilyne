@@ -1,8 +1,8 @@
-module Marilyn
+module Marilyne
   class Engine < ::Rails::Engine
-    initializer 'marilyn.initialize' do
+    initializer 'marilyne.initialize' do
       ActiveSupport.on_load(:action_view) do
-        include Marilyn::Helper
+        include Marilyne::Helper
       end
     end
   end

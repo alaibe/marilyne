@@ -1,4 +1,4 @@
-module Marilyn
+module Marilyne
   # = Presenter Helper
   module Helper
 
@@ -6,12 +6,12 @@ module Marilyn
     # ==== Examples
     #   presenter_for('base')
     #   # => render partial: 'base', object: BasePresenter.new(Base.new)
-    #   
+    #
     #   You can specify the object you want present:
     #
     #   presenter_for('base', object: @object)
     #   # => render partial: 'base', object: BasePresenter.new(@object)
-    #   
+    #
     #   or multiple object
     #
     #   presenter_for('base', objects: [@object, @other_object])
@@ -27,15 +27,15 @@ module Marilyn
     # * <tt>:presenter</tt> - Specifies the presenter you want use
     def presenter_for(template, options = {})
       presenter_string = options[:presenter] || "#{template.camelize}Presenter"
-      
-      object           = extract_objects template, options[:object], options[:objects] 
+
+      object           = extract_objects template, options[:object], options[:objects]
       presenter        = presenter_string.constantize.new self, *object
-      
+
       if block_given?
         return unless yield object
       end
 
-      render partial: template, object: presenter  
+      render partial: template, object: presenter
     end
 
     private

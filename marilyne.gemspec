@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "marilyn/version"
+require "marilyne/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "marilyne"
-  s.version     = Marilyn::VERSION
+  s.version     = Marilyne::VERSION
   s.authors     = ["Anthony Laibe"]
   s.email       = ["anthony.laibe@gmail.com"]
-  s.homepage    = "https://github.com/alaibe/marilyn"
+  s.homepage    = "https://github.com/alaibe/marilyne"
   s.summary     = "Use presenter pattern in rails easily."
   s.description = "Use presenter pattern in rails easily."
 

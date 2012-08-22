@@ -9,32 +9,32 @@ class Base
     false
   end
 end
-class BasePresenter < Marilyn::Presenter;end;
+class BasePresenter < Marilyne::Presenter;end;
 
-class MarilynTest < ActiveSupport::TestCase
-  include Marilyn::Helper
+class MarilyneTest < ActiveSupport::TestCase
+  include Marilyne::Helper
 
   def render(options)
-    options 
+    options
   end
 
   test "presenter_for without option" do
     options = presenter_for 'base'
-    
+
     assert_equal options[:partial], 'base'
     assert options[:object].is_a? BasePresenter
   end
 
   test "presenter_for with object" do
     options = presenter_for 'base', object: Base.new
-    
+
     assert_equal options[:partial], 'base'
     assert options[:object].is_a? BasePresenter
   end
 
   test "presenter_for with multiple objects" do
     options = presenter_for 'base', objects: [Base.new, Base.new]
-    
+
     assert_equal options[:partial], 'base'
     assert options[:object].is_a? BasePresenter
     assert_equal options[:object].objects.length, 2
@@ -42,14 +42,14 @@ class MarilynTest < ActiveSupport::TestCase
 
   test "presenter_for with block at true" do
     options = presenter_for('base', object: Base.new) { |b| b.true? }
-    
+
     assert_equal options[:partial], 'base'
     assert options[:object].is_a? BasePresenter
   end
 
   test "presenter_for with block at false" do
     options = presenter_for('base', object: Base.new) { |b| b.false? }
-    
+
     assert_nil options
   end
 end
