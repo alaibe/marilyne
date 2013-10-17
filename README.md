@@ -76,3 +76,7 @@ Finally, it's also possible to pass a presenter in options
 ## Contributors
 
 *Anthony Laibe
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alaibe/marilyne/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
